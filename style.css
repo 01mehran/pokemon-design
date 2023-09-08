@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(90, 88, 88);
+}
+.main-form {
+  background-color: #333b44;
+  width: 600px;
+  height: 590px;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+.sub-form {
+  width: 531px;
+  height: 528px;
+  background-color: white;
+  margin: 26px 35px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.sub-form a {
+  text-decoration: none;
+
+}
+.sub-form-dragon_img{
+  width:150;
+  display: block;
+  margin: 135px auto;
+}
+.sub-form_word{
+  color: #424c58;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  
+}
+
