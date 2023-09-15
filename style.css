@@ -1,16 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(90, 88, 88);
+  background-color: #ddd;
 }
 .main-form {
   background-color: #333b44;
   width: 600px;
   height: 590px;
-  margin: 30px auto;
+  margin: 18px auto;
   border-radius: 20px;
 }
 .sub-form {
@@ -23,18 +21,36 @@ body {
 }
 .sub-form a {
   text-decoration: none;
-
 }
-.sub-form-dragon_img{
-  width:150;
+.sub-form-dragon_img {
   display: block;
   margin: 135px auto;
 }
-.sub-form_word{
+.sub-form_word {
   color: #424c58;
   text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 800;
-  
+  font-family: cursive;
+  font-weight: 900;
 }
-
+.search-input {
+  caret-color: rgb(249, 34, 156);
+  background-image: url(images/search-icon-png-18.png);
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: 6px 13px;
+  margin: 1em auto;
+  display: block;
+  width: 39em;
+  padding: 14px 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(156, 150, 150);
+  outline: none;
+  position: sticky;
+  top: 0px;
+  transition: width 1s linear 1s;
+}
+input:focus {
+  width: 42%;
+  border-color: aqua;
+  box-shadow: 1px 1px 8px aqua;
+}
