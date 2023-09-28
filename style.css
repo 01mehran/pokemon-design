@@ -1,21 +1,24 @@
+ /* start mainPage */
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #ddd;
+  
 }
 .main-form {
   background-color: #333b44;
   width: 600px;
-  height: 590px;
+  height: 563px;
   margin: 18px auto;
   border-radius: 20px;
 }
 .sub-form {
   width: 531px;
-  height: 528px;
+  height: 520px;
   background-color: white;
-  margin: 26px 35px;
+  margin: 23px 36px;
   display: inline-block;
   border-radius: 10px;
 }
@@ -45,12 +48,105 @@ body {
   border-radius: 5px;
   border: 1px solid rgb(156, 150, 150);
   outline: none;
-  position: sticky;
-  top: 0px;
-  transition: width 1s linear 1s;
 }
 input:focus {
-  width: 42%;
   border-color: aqua;
   box-shadow: 1px 1px 8px aqua;
 }
+ /* End mainPage  */
+ /* * * * * */
+ /* Start Secondpage */
+ .main2-form {
+  background-color: #333b44;
+  width: 400px;
+  height: 560px;
+  margin: 50px auto;
+  border-radius: 11px;
+  display: none;
+}
+.sub-main2 {
+  width: 357px;
+  height: 519px;
+  background-color: white;
+  margin: 21px 19px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+.dragon-img_2 {
+  width: 357px;
+  height: 325;
+  border-radius: 10px;
+}
+.word-above_dragon {
+  border: 1px solid #333b44;
+  border-radius: 100%;
+  width: 33px;
+  background-color: #333b44;
+  color: white;
+  padding: 15px;
+  letter-spacing: 2;
+  font-size: 23px;
+  position: absolute;
+  right: 15;
+  top: 22;
+  margin: 0;
+}
+.secon-part_in-sub {
+  width: 357px;
+  height: 198px;
+  border-radius: 0 0 10px 10px;
+  background-color: #dddee0;
+}
+.grass-word {
+  border: 1px solid;
+  width: 45px;
+  height: 20px;
+  border-radius: 30px;
+  color: hsl(0, 0%, 98%);
+  background-color: #414853;
+  padding: 5px 13px;
+  margin-top: 19px;
+  font-size: 18px;
+  text-align: center;
+}
+.bul-word {
+  margin-left: 25px;
+  height: 20px;
+}
+.title-twopart {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 15px;
+}
+.pokemon-word {
+  margin-left: 25px;
+  font-size: 16px;
+  color: #4b5563;
+  font-weight: 550;
+}
+.btn-container {
+  max-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 24px;
+  margin-top: 10px;
+  column-gap: 4px;
+}
+.same-btn {
+  border: none;
+  background-color: #bebebf;
+  border-radius: 3px;
+  padding: 6px 9px;
+  margin-top: 4px;
+}
+.different-word{
+    font-weight: 600;
+    font-size: 15px;
+}
+.ch{
+    margin-left: 4px;
+}
+/* End Secondpage */
+
