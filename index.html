@@ -8,58 +8,70 @@
 </head>
 
 <body>
-    <!-- Start mainPage -->
-    <div class="the-main" id="the-main">
-        <div>
-            <input type="number" name="NumberInput" class="search-input" id="searchInput"
-                placeholder="Please Enter Number ... " min="1" max="20" onclick="changePokemon()"
-                onclick="changePokemon2()">
-            <div class="main-form">
+    
+    <div class="container" id="container">
+        <!-- Start First Section -->
+
+        <section>
+            <input type="number" name="NumberInput" class="searchInput" id="searchInput"
+                placeholder="Please Enter Number ... ">
+            <div class="First-parent" id="First-parent">
                 <a href="#" id="pageLink">
-                    <div class="sub-form">
-                        <img src="/images/pokemon-image.png" class="sub-form-dragon_img" id="main-dragon"
-                            alt="green-dragooon" width="140">
-                        <h1 class="sub-form_word" id="bulbasaur-word">bulbasaur</h1>
+                    <div class="First-parent_child">
+                        <img src="/images/pokemon-image.png" class="First-parent_img" id="First-parent_img"
+                            alt="green-dragooon" width="160">
+                        <h1 class="bulbasaur-name" id="bulbasaur-name">bulbasaur</h1>
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
 
-        <!-- End mainPage -->
+        <!-- End First Section -->
         <!-- * * * * *  -->
-        <!-- Start Secondpage -->
-        <section>
-            <div class="main2-form" id="main2-form">
-                <div class="sub-main2">
+        <!-- Start Second Section -->
+        <section >
+
+            <div class="Second-parent" id="Second-parent">
+
+                <div class="Second-part_child">
+
                     <div>
-                        <img src="images/pokemon-image.png" alt="big-green-dragon" class="dragon-img_2"
-                            id="dragon-img_2">
-                        <h3 class="word-above_dragon" id="word-above_dragon">001</h3>
+                        <img src="images/pokemon-image.png" alt="big-green-dragon" class="Second-parent_img"
+                            id="Second-parent_img">
+                        <h3 class="dragon-Id" id="dragon-Id">001</h3>
                     </div>
                     <div class="secon-part_in-sub">
-                        <div class="title-twopart">
-                            <h1 class="bul-word" id="bul-word"> Bulbasaur</h1>
-                            <span class="grass-word" id="grass-word">Grass</span>
+                        <div class="nameType">
+                            <h1 class="second-bulbasaur_name" id="second-bulbasaur_name"> Bulbasaur</h1>
+                            <span class="pokemone-type" id="pokemone-type">Grass</span>
                         </div>
-                        <span class="pokemon-word" id="gender"> Seed pokemon</span>
-                        <div class="btn-container">
-                            <button class="same-btn"> HP <span class="different-word" id="height">1071</span> </button>
-                            <button class="same-btn"> W <span class="different-word" id="weight">951</span></button>
-                            <button class="same-btn"> CP <span class="different-word" id="color">0.79m</span> </button>
-                            <button class="same-btn"> <img src="images/Vector.svg" alt="logo"> <span
-                                    class="different-word  ch">Water</span></button>
-                            <button class="same-btn"><img src="images/Vector.svg" alt="logo"> <span
-                                    class="different-word ch">Electric</span> </button>
-                            <button class="same-btn"> <img src="images/trending_down.svg" alt="logo"> <span
-                                    class="different-word ch">Fire</span> </button>
+                        <span class="pokemon-jender" id="pokemon-jender"> Seed pokemon</span>
+
+                        <div>
+                            <div class="btn-box space">
+                                <button class="same-btn"> HP <span class="Bold-word" id="height">1071</span> </button>
+                                <button class="same-btn"> W <span class="Bold-word" id="weight">951</span></button>
+                                <button class="same-btn"> CP <span class="Bold-word" id="color">0.79m</span>
+                                </button>
+                            </div>
+                            <div class="btn-box">
+                                <button class="same-btn"> <img src="images/Vector.svg" alt="logo"> <span
+                                        class="Bold-word" id="water">Water</span></button>
+                                <button class="same-btn"><img src="images/Vector.svg" alt="logo"> <span
+                                        class="Bold-word">Electric</span> </button>
+                                <button class="same-btn"> <img src="images/trending_down.svg" alt="logo"> <span
+                                        class="Bold-word">Fire</span> </button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
 
         </section>
     </div>
-    <!-- End Secondpage  -->
+
+    <!-- End Second Section  -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 

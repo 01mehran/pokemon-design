@@ -1,88 +1,92 @@
- /* start mainPage */
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #ddd;
-  
 }
-.main-form {
-  background-color: #333b44;
-  width: 600px;
-  height: 563px;
-  margin: 18px auto;
-  border-radius: 20px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 30px;
 }
-.sub-form {
-  width: 531px;
-  height: 520px;
-  background-color: white;
-  margin: 23px 36px;
-  display: inline-block;
-  border-radius: 10px;
-}
-.sub-form a {
-  text-decoration: none;
-}
-.sub-form-dragon_img {
-  display: block;
-  margin: 135px auto;
-}
-.sub-form_word {
-  color: #424c58;
-  text-align: center;
-  font-family: cursive;
-  font-weight: 900;
-}
-.search-input {
-  caret-color: rgb(249, 34, 156);
+.searchinput {
   background-image: url(images/search-icon-png-18.png);
   background-repeat: no-repeat;
   background-size: 17px;
   background-position: 6px 13px;
-  margin: 1em auto;
   display: block;
+  margin: 1em auto;
   width: 39em;
   padding: 14px 25px;
   border-radius: 5px;
   border: 1px solid rgb(156, 150, 150);
   outline: none;
+  caret-color: rgb(249, 34, 156);
 }
-input:focus {
+.searchinput:focus {
   border-color: aqua;
   box-shadow: 1px 1px 8px aqua;
 }
- /* End mainPage  */
- /* * * * * */
- /* Start Secondpage */
- .main2-form {
-  background-color: #333b44;
+/* Start First Section  design */
+
+.First-parent {
+  background-color: #4b5563;
+  width: 600px;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.First-parent_child {
+  width: 531px;
+  height: 520px;
+  background-color: white;
+  border-radius: 8px;
+}
+.First-parent_img {
+  margin: 7em 12em;
+}
+.bulbasaur-name {
+  color: #424c58;
+  text-align: center;
+  font-family: cursive;
+  font-weight: 900;
+}
+.First-parent a {
+  text-decoration: none;
+}
+
+/* End Firts Section Design  */
+
+/* Start Second Section Design */
+.Second-parent {
+  background-color: #4b5563;
   width: 400px;
   height: 560px;
-  margin: 50px auto;
+  margin-top: 73px;
   border-radius: 11px;
   display: none;
 }
-.sub-main2 {
+.Second-part_child {
   width: 357px;
   height: 519px;
   background-color: white;
-  margin: 21px 19px;
+  margin: 20px;
   display: inline-block;
   border-radius: 10px;
   position: relative;
 }
-.dragon-img_2 {
+.Second-parent_img {
   width: 357px;
   height: 325;
   border-radius: 10px;
 }
-.word-above_dragon {
-  border: 1px solid #333b44;
+.dragon-Id {
   border-radius: 100%;
   width: 33px;
-  background-color: #333b44;
+  background-color: 4B5563;
   color: white;
   padding: 15px;
   letter-spacing: 2;
@@ -93,60 +97,105 @@ input:focus {
   margin: 0;
 }
 .secon-part_in-sub {
-  width: 357px;
   height: 198px;
   border-radius: 0 0 10px 10px;
-  background-color: #dddee0;
+  background-color: #e5e7eb;
 }
-.grass-word {
+.nameType {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 15px;
+}
+.pokemone-type {
   border: 1px solid;
   width: 45px;
   height: 20px;
   border-radius: 30px;
   color: hsl(0, 0%, 98%);
-  background-color: #414853;
+  background-color: #4b5563;
   padding: 5px 13px;
   margin-top: 19px;
   font-size: 18px;
   text-align: center;
 }
-.bul-word {
+.second-bulbasaur_name {
   margin-left: 25px;
   height: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(50, 50, 50);
+  margin-top: 17px;
 }
-.title-twopart {
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 15px;
-}
-.pokemon-word {
+
+.pokemon-jender {
   margin-left: 25px;
   font-size: 16px;
   color: #4b5563;
   font-weight: 550;
 }
-.btn-container {
-  max-width: 250px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: 24px;
-  margin-top: 10px;
-  column-gap: 4px;
+.btn-box {
+  margin: 5px 0 0 24px;
+}
+.space {
+  margin-top: 18px;
 }
 .same-btn {
   border: none;
-  background-color: #bebebf;
+  background-color: hsl(0, 0%, 98%);
   border-radius: 3px;
   padding: 6px 9px;
-  margin-top: 4px;
 }
-.different-word{
-    font-weight: 600;
-    font-size: 15px;
+.Bold-word {
+  font-weight: 600;
+  font-size: 15px;
+  color: #222428;
 }
-.ch{
-    margin-left: 4px;
-}
-/* End Secondpage */
+/* End Second Section Design */
 
+/* Start @media Query */
+
+@media screen and (max-width: 1100px) {
+  .First-parent{
+    width: 400px;
+  }
+  .First-parent_child{
+    width: 357px;
+  }
+  .searchinput{
+    width: 320px;
+  }
+  .container{
+    column-gap: 15px;
+
+  }
+  .First-parent_img{
+    margin: 7em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    display: block;
+    margin: auto;
+    column-gap: 20px;
+  }
+  .searchinput {
+    margin: 15px auto;
+    width: 300px;
+  }
+  .First-parent {
+    width: 400px;
+    margin: auto;
+  }
+  .Second-parent {
+    margin-top: 30px;
+    margin: 15px auto;
+  }
+  .First-parent_child {
+    width: 357px;
+  }
+  .First-parent_img {
+    margin: 7em 7em;
+  }
+
+}
+/* End @media Qurey */
